@@ -13,13 +13,19 @@
             <div class="form-element" draggable="true">Text Input</div>
             <div class="form-element" draggable="true">Checkbox</div>
             <div class="form-element" draggable="true">Radio Button</div>
+            <div class="form-element" draggable="true">Line Break</div>
+            <div class="form-element" draggable="true">label</div>
             <!-- Add more form elements here -->
         </div>
-        <div class="main-area" id="main-area" ondrop="drop(event)" ondragover="allowDrop(event)">
-            <h2>Form Builder</h2>
-            <button onclick="copyHTMLCode()">Copy HTML Code</button>
-            <div id="generated-html"></div>
-            <div id="main-area"></div>
+        <div class="right-container">
+            <div class="header">
+                <h2>Form Builder</h2>
+                <button onclick="copyHTMLCode()">Copy HTML Code</button>
+            </div>
+            <div class="main-area" id="main-area" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <div id="generated-html"></div>
+                <div id="main-drop-area"></div>
+            </div>
         </div>
     </div>
     <script src="script.js"></script>
