@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Form Builder</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <h2>Form Elements</h2>
+            <div class="form-element" draggable="true">Text Input</div>
+            <div class="form-element" draggable="true">Checkbox</div>
+            <div class="form-element" draggable="true">Radio Button</div>
+            <!-- Add more form elements here -->
+        </div>
+        <div class="main-area" id="main-area" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <h2>Form Builder</h2>
+            <button onclick="copyHTMLCode()">Copy HTML Code</button>
+            <div id="generated-html"></div>
+            <div id="main-area"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
