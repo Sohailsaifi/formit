@@ -14,6 +14,7 @@ function createLabelElement() {
   
     var label = document.createElement("label");
     label.textContent = labelText;
+    label.contentEditable = "true"; // Allow editing the label text
     return label;
 }
 
