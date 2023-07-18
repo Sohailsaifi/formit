@@ -9,22 +9,38 @@
 <body>
     <div class="container">
         <div class="sidebar">
-            <h2>Form Elements</h2>
-            <div class="form-element" draggable="true">Text Input</div>
-            <div class="form-element" draggable="true">Checkbox</div>
-            <div class="form-element" draggable="true">Radio Button</div>
-            <div class="form-element" draggable="true">Line Break</div>
-            <div class="form-element" draggable="true">label</div>
+            <h2 class="heading">Form Elements</h2>
+            <div class="form-element" draggable="true" ondragstart="drag(event)">Text Input</div>
+            <div class="form-element" draggable="true" ondragstart="drag(event)">Checkbox</div>
+            <div class="form-element" draggable="true" ondragstart="drag(event)">Radio Button</div>
+            <div class="form-element" draggable="true" ondragstart="drag(event)">Line Break</div>
+            <div class="form-element" draggable="true" ondragstart="drag(event)">Label</div>
+            <div class="form-element" draggable="true" ondragstart="drag(event)">Password Input</div>
+            <div class="form-element" draggable="true" ondragstart="drag(event)">File Input</div>
+            <div class="form-element" draggable="true" ondragstart="drag(event)">Textarea</div>
+            <div class="form-element" draggable="true" ondragstart="drag(event)">Select Dropdown</div>
+            <div class="form-element" draggable="true" ondragstart="drag(event)">Submit Button</div>
+            <div class="form-element" draggable="true" ondragstart="drag(event)">Reset Button</div>
+            <div class="form-element" draggable="true" ondragstart="drag(event)">Date Input</div>
+            <div class="form-element" draggable="true" ondragstart="drag(event)">Time Input</div>
+            <div class="form-element" draggable="true" ondragstart="drag(event)">Color Picker</div>
+            <div class="form-element" draggable="true" ondragstart="drag(event)">Number Input</div>
+            <div class="form-element" draggable="true" ondragstart="drag(event)">Range Input</div>
+            <div class="form-element" draggable="true" ondragstart="drag(event)">Checkboxes Group</div>
+            <div class="form-element" draggable="true" ondragstart="drag(event)">Radio Buttons Group</div>
+            <div class="form-element" draggable="true" ondragstart="drag(event)">Image Input</div>
+
             <!-- Add more form elements here -->
         </div>
         <div class="right-container">
             <div class="header">
                 <h2>Form Builder</h2>
-                <button onclick="copyHTMLCode()">Copy HTML Code</button>
+                <button class="btn" onclick="copyHTMLCode()">Copy HTML Code</button>
+                <button class="btn" onclick="newLine()">New Line</button>
+                <button class="btn" onclick="addSpace()">Add Space</button>
             </div>
             <div class="main-area" id="main-area" ondrop="drop(event)" ondragover="allowDrop(event)">
                 <div id="generated-html"></div>
-                <div id="main-drop-area"></div>
             </div>
         </div>
     </div>
